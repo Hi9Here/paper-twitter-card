@@ -1,0 +1,68 @@
+<link rel="import" href="../paper-material/paper-material.html">
+<link rel="import" href="../paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../iron-image/iron-image.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
+<link rel="import" href="../iron-icons/communication-icons.html">
+<link rel="import" href="../iron-icons/device-icons.html">
+<link rel="import" href="../iron-icons/hardware-icons.html">
+<link rel="import" href="../iron-icons/image-icons.html">
+<link rel="import" href="../iron-icons/maps-icons.html">
+<link rel="import" href="../iron-icons/notification-icons.html">
+<link rel="import" href="../iron-icons/places-icons.html">
+<link rel="import" href="../iron-icons/social-icons.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+<!--
+  `<deko-card></deko-card>`
+  @demo demo.html
+-->
+<dom-module id="deko-paper-card">
+  <template>
+    <style>
+      paper-material {
+        background-color: #fafafa;
+        color: #212121;
+        height: 260px;
+        width: 200px;
+        display: inline-block;
+        margin: 5px;
+        overflow: hidden;
+        cursor: pointer; 
+        cursor: hand;
+      }
+      paper-toolbar {
+        --paper-toolbar-sm-height: 35px;
+        --paper-toolbar-height: 35px;
+      }
+
+    </style>
+    <paper-material elevation="1" style$="background-color:[[cardColor]]">
+      <paper-toolbar style$="background:[[toolbarColor]]">
+        <iron-icon icon="[[icon]]" style="height:90%"></iron-icon>
+        <div class="title" ></div>
+      </paper-toolbar> 
+      <content></content>   
+     </paper-material>
+    
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "deko-paper-card",
+    properties:{
+
+      icon:{
+        type:String,
+        value:"bookmark",
+      },
+      toolbarColor: {
+        type: String,
+        value:"#1da1f2"
+      },
+      cardColor: {
+        type: String,
+        value:"#1da1f2"
+      }
+    }
+  })
+</script>

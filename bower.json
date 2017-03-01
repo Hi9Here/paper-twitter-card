@@ -1,0 +1,16 @@
+{
+  "name": "paper-twitter-card",
+  "description": "Twitter Card in Material Design that allows you to share the URL of the page that you are on",
+  "main": "paper-twitter-card.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "deko-card": "Hi9Here/deko-card",
+    "iron-image": "Polymerelements/iron-image#^1.2.5"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
