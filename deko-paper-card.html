@@ -13,15 +13,13 @@
 <link rel="import" href="../iron-icons/social-icons.html">
 <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
 <!--
-  `<deko-card></deko-card>`
+  `<deko-paper-card></deko-paper-card>`
   @demo demo.html
 -->
 <dom-module id="deko-paper-card">
   <template>
     <style>
       paper-material {
-        background-color: #fafafa;
-        color: #212121;
         height: 260px;
         width: 200px;
         display: inline-block;
@@ -36,8 +34,8 @@
       }
 
     </style>
-    <paper-material elevation="1" style$="background-color:[[cardColor]]">
-      <paper-toolbar style$="background:[[toolbarColor]]">
+    <paper-material elevation="1" style$="background-color:[[cardcolor]]">
+      <paper-toolbar style$="background:[[toolbarcolor]]">
         <iron-icon icon="[[icon]]" style="height:90%"></iron-icon>
         <div class="title" ></div>
       </paper-toolbar> 
@@ -55,13 +53,13 @@
         type:String,
         value:"bookmark",
       },
-      toolbarColor: {
+      toolbarcolor: {
         type: String,
-        value:"#1da1f2"
+        value:""
       },
-      cardColor: {
+      cardcolor: {
         type: String,
-        value:"#1da1f2"
+        value:""
       }
     }
   })

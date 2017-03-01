@@ -5,7 +5,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "deko-card": "Hi9Here/deko-card",
-    "iron-image": "Polymerelements/iron-image#^1.2.5"
+    "iron-image": "Polymerelements/iron-image#^1.2.5",
+    "deko-paper-card": "Hi9here/deko-paper-card"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
